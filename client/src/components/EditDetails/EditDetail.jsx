@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-// import logo from '../../assests/icon.jpg';
+
 import '../signup/_signup.scss';
 
 // const apiUrl=`http://localhost:5000`;
@@ -208,8 +208,8 @@ getUpdatedDetails = (id) => {
         
 
         <button className="login__button"
-          type="button"
-          onClick={this.handleFormDelete}>Delete</button>
+          type="button"         
+          onClick={this.handleFormDelete}> Delete</button>
           </form>
         </div>
       

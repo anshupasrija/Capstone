@@ -12,7 +12,8 @@ class Products extends Component {
             <div className="card">
             <h1 className="card__heading">Rent A Bin</h1>
             <div className="card__container">
-                <div className="card__subcontainer"><img src={box1} alt="bannerimage" className="card__image" /></div>
+                <div className="card__subcontainer"><img src={box1} alt="bannerimage" className="card__image" /> 
+            </div>
                 <div className="card__subcontainer"><img src={boxes3} alt="bannerimage" className="card__image" /> </div>
                 <div className="card__subcontainer"><img src={boxes25} alt="bannerimage" className="card__image" /> </div>                     
              </div>  

@@ -2,7 +2,7 @@ const express = require("express");
 const morgan = require("morgan");
 const cors = require("cors");
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 const signup=require("./routes/signup");
 const login =require("./routes/login");
 const edit =require("./routes/edit");
@@ -23,6 +23,8 @@ app.use('/signup',signup);
  app.use('/edit',edit);
  app.use('/user',owner);
 
-
+if(process.env.NODE_ENV === 'production'){
+  app.use(express.static('client/build'));
+}
 
 app.listen(PORT, console.log(`listening at: http://localhost:${PORT}`));
