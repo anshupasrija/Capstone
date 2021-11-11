@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {      
+  "scripts": {
     "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap  && npm run build",
-    "start": "node server.js",  
+    "start": "node server.js",
     "dev": "npx nodemon server.js"
   },
   "keywords": [],
